@@ -22,7 +22,9 @@ func newCalculator(a: Int, b: Int) -> (Int, Int) {
 let ex2 = newCalculator(2, b: 4)
 print(ex2)
 
-// 3. Call arrayPrinter with an array with a printer function that greets the value it receives (for example, "Moshe" will return "Hello, Moshe!")
+// 3. Call arrayPrinter with an array with a printer function 
+// that greets the value it receives 
+// (for example, "Moshe" will return "Hello, Moshe!")
 func arrayPrinter(array: [String], printer: String -> String) {
     for a in array {
         print(printer(a))
@@ -35,7 +37,9 @@ func printFunc (name: String) -> String {
 let ex3 = ["Luke", "C3PO", "R2D2", "Han"]
 arrayPrinter(ex3, printer: printFunc)
 
-// 4. Create an incrementer function. It receives a number (incrementAmount) and then returns a function that receives a number (x) and returns x + incrementAmount
+// 4. Create an incrementer function. 
+// It receives a number (incrementAmount) and then returns a function 
+// that receives a number (x) and returns x + incrementAmount
 // For example:
 // let tenIncrementer = incrementer(10)
 // tenIncrementer(10) returns 20
@@ -50,30 +54,36 @@ print(tenIncrementor(10))
 print(tenIncrementor(3))
 
 
-// 5. Use the map function on this array to create an array of Strings. Use trailing closure syntax:
+// 5. Use the map function on this array to create an array of Strings. 
+// Use trailing closure syntax:
 let numbers = [1, 2, 3, 4, 5]
 // ex5 = numbers.map({x in return String(x)})
 // more simple
 let ex5 = numbers.map{String($0)}
 print(ex5)
 
-// 6. Write an intMap function that receives [Int] and a closure to change the value of each int in the array to a different int
+// 6. Write an intMap function that receives [Int] 
+// and a closure to change the value of each int 
+// in the array to a different int
 func intMap(array: [Int], closure: Int -> Int) -> [Int] {
     return array.map(closure)
 }
 
-// Uncomment the following line to make sure your implementation of intMap works:
+// Uncomment the following line to make sure 
+// your implementation of intMap works:
 // let results = intMap([1, 2, 3, 4]) { $0 * $0 }
 // print(results)
 
-// 7. Create a function called memorize() that receives a function of type Int -> Int, and returns memorized
+// 7. Create a function called memorize() that receives 
+// a function of type Int -> Int, and returns memorized
 // version of it
 func memorize(f: Int -> Int) -> (Int -> Int) {
     return f
 }
 let doubleFuncion = memorize{$0 * 2}
 
-// 8. Write a function called logger that takes a closure and runs it, but logs before and after that function is run.
+// 8. Write a function called logger that takes a closure and runs it, 
+// but logs before and after that function is run.
 // For example: logger("myFunc") { println("I ran!") } should print:
 // [*] Running myFunc
 // I ran!
@@ -86,7 +96,8 @@ func logger(funcName: String, closure: () -> ()) {
 logger("my function", closure: {print("Hello World!")})
 
 
-// 9. Create an enum of the days of the week, with appropriate raw values
+// 9. Create an enum of the days of the week, 
+// with appropriate raw values
 enum WeekDay: Int {
     case Sunday = 1
     case Monday
@@ -99,7 +110,8 @@ enum WeekDay: Int {
 let x = WeekDay.init(rawValue: 4)
 
 // 10. Create enum of TimeUnit with values Second, Minute, Hour, Day and Week.
-// Add a method for converting between them. e.g. TimeUnit.Day.convertTo(TimeUnit.Hour) == 24.0
+// Add a method for converting between them. 
+// e.g. TimeUnit.Day.convertTo(TimeUnit.Hour) == 24.0
 enum TimeUnit: Double {
     case Second = 1
     case Minute = 60
