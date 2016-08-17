@@ -48,7 +48,6 @@ and return an array containing it’s digits in order.
 13. Write a recursive function pow that takes two numbers x and y
 as input and returns x to the power y.
 
-//No Comment
 
 
 
