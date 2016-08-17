@@ -131,3 +131,39 @@ let weekInADays = TimeUnit.Day.convertTo(TimeUnit.Week)
 let minuteToSeconds = TimeUnit.Minute.convertTo(TimeUnit.Second)
 let secondToMinute = TimeUnit.Second.convertTo(TimeUnit.Minute)
 
+// 11. Write a recursive function named factorial that takes an
+// integer n and returns it’s factorial.
+func factorial(n: Int) -> Int {
+    return n == 1 ? 1 : n * factorial(n - 1)
+}
+print(factorial(3))
+print(factorial(5))
+print(factorial(10))
+
+
+
+// 12. Implement a recursive function named digits
+// that takes a positive integer number
+// and return an array containing it’s digits in order.
+func digits(n: Int) -> [Int] {
+    if n < 10 {
+        return [n]
+    } else {
+        return digits(n / 10) + [n % 10]
+    }
+}
+digits(123)
+digits(0)
+digits(54321)
+
+// 13. Write a recursive function pow that takes two numbers x and y
+// as input and returns x to the power y.
+func pow(x: Int, y: Int) -> Int {
+    return y == 0 ? 1 : x * pow(x, y: y - 1)
+}
+print(pow(2, y: 10))
+print(pow(3, y: 3))
+print(pow(100, y: 1))
+print(pow(10, y: 0))
+
+

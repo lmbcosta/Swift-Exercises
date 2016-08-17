@@ -38,6 +38,16 @@ I ran!
 10. Create enum of TimeUnit with values Second, Minute, Hour, Day and Week.
 Add a method for converting between them. e.g. TimeUnit.Day.convertTo(TimeUnit.Hour) == 24.0
 
+11. Write a recursive function named factorial that takes an
+integer n and returns it’s factorial.
+
+12. Implement a recursive function named digits
+that takes a positive integer number
+and return an array containing it’s digits in order.
+
+13. Write a recursive function pow that takes two numbers x and y
+as input and returns x to the power y.
+
 
 
 
