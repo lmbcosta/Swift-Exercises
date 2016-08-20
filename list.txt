@@ -48,6 +48,14 @@ and return an array containing it’s digits in order.
 13. Write a recursive function pow that takes two numbers x and y
 as input and returns x to the power y.
 
+14. Implement the Euclidian algorithm for getting the greatest common divisor of two numbers
+by using repeated subtractions. The algorithm starts with two numbers and 
+subtracts the smallest one from the other one until one of them becomes zero, 
+the other one is the greatest common divisor of the original number. 
+The gcd function takes two numbers as input and returns their greatest common divisor. 
+Implement the algorithm as a recursive function.
+
+15. Implement the binary search function using recursion.
 
 
 
